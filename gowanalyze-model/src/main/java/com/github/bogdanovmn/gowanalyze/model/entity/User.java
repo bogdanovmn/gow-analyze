@@ -1,15 +1,14 @@
 package com.github.bogdanovmn.gowanalyze.model.entity;
 
-import javax.persistence.*;
-import java.util.Date;
-import java.util.Set;
-
 import com.github.bogdanovmn.common.spring.jpa.BaseEntityWithUniqueName;
 import com.github.bogdanovmn.common.spring.menu.UserAuthorization;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import javax.persistence.*;
+import java.util.Date;
+import java.util.Set;
 
 @Getter
 @Setter

@@ -10,19 +10,25 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>gowanalyze-cli-something</artifactId>
+    <artifactId>gowanalyze-cli-import</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.github.bogdanovmn.gowanalyze</groupId>
+            <artifactId>gowanalyze-import</artifactId>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
 					<skipAssembly>false</skipAssembly>
-					<finalName>something</finalName>
+					<finalName>import</finalName>
                     <archive>
                         <manifest>
-                            <mainClass>com.github.bogdanovmn.gowanalyze.cli.something.App</mainClass>
+                            <mainClass>com.github.bogdanovmn.gowanalyze.cli.import.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

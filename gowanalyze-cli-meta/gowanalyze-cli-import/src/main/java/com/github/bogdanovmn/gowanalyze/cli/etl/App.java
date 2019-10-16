@@ -1,4 +1,4 @@
-package com.github.bogdanovmn.gowanalyze.cli.something;
+package com.github.bogdanovmn.gowanalyze.cli.etl;
 
 
 import com.github.bogdanovmn.cmdlineapp.CmdLineAppBuilder;
@@ -6,7 +6,7 @@ import com.github.bogdanovmn.cmdlineapp.CmdLineAppBuilder;
 public class App {
 	public static void main(String[] args) throws Exception {
 		new CmdLineAppBuilder(args)
-			.withJarName("something")
+			.withJarName("import")
 			.withDescription("")
 //			.withArg("option-name", "option descr")
 			.withEntryPoint(

@@ -1,10 +1,12 @@
 package com.github.bogdanovmn.gowanalyze.web.user;
 
-import com.github.bogdanovmn.gowanalyze.web.infrastructure.AbstractVisualController;
-import com.github.bogdanovmn.gowanalyze.web.infrastructure.FormErrors;
-import com.github.bogdanovmn.gowanalyze.web.infrastructure.config.security.Md5PasswordEncoder;
+import com.github.bogdanovmn.common.spring.menu.MenuItem;
 import com.github.bogdanovmn.gowanalyze.model.entity.User;
 import com.github.bogdanovmn.gowanalyze.model.entity.UserRepository;
+import com.github.bogdanovmn.gowanalyze.web.infrastructure.AbstractVisualController;
+import com.github.bogdanovmn.gowanalyze.web.infrastructure.FormErrors;
+import com.github.bogdanovmn.gowanalyze.web.infrastructure.MainMenuItem;
+import com.github.bogdanovmn.gowanalyze.web.infrastructure.config.security.Md5PasswordEncoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
@@ -13,10 +15,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import com.github.bogdanovmn.common.spring.menu.MenuItem;
-import com.github.bogdanovmn.gowanalyze.web.infrastructure.MainMenuItem;
-
-
 
 import javax.validation.Valid;
 

@@ -1,9 +1,9 @@
 package com.github.bogdanovmn.gowanalyze.web.user;
 
+import com.github.bogdanovmn.gowanalyze.model.entity.User;
 import com.github.bogdanovmn.gowanalyze.web.infrastructure.AbstractMinVisualController;
 import com.github.bogdanovmn.gowanalyze.web.infrastructure.FormErrors;
 import com.github.bogdanovmn.gowanalyze.web.infrastructure.config.security.ProjectSecurityService;
-import com.github.bogdanovmn.gowanalyze.model.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

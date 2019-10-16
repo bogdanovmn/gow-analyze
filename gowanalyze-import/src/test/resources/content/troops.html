@@ -1,0 +1,506 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+                <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="alternate" hreflang="en-US" href="/trooptable">
+    <link rel="alternate" hreflang="es-ES" href="/es-ES/trooptable">
+    <link rel="alternate" hreflang="de-DE" href="/de-DE/trooptable">
+    <link rel="alternate" hreflang="it-IT" href="/it-IT/trooptable">
+    <link rel="alternate" hreflang="fr-FR" href="/fr-FR/trooptable">
+    <link rel="alternate" hreflang="ru-RU" href="/ru-RU/trooptable">
+    <link rel="alternate" hreflang="zh-CN" href="/zh-CN/trooptable">
+    <link rel="canonical" href="/trooptable">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icons/manifest.json">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://gowdb.com","name":"Home"}}
+                    ,{"@type":"ListItem","position":2,"item":{"@id":"http://gowdb.com/trooptable","name":"Troop Table"}}
+                    ]}
+    </script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Gems of War Database","alternateName":"GoWDB","url":"http://gowdb.com"}</script>
+                <title>Troop Table - Gems of War Database</title>
+                            <link rel="stylesheet" href="/styles/gems.scss?ver=1556089600" />
+                            <link rel="stylesheet" href="/styles/jquery.qtip.min.css?ver=1556089600" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+            <script src="/inc/jquery-2.2.3.min.js?ver=1556089600"></script>
+            <script src="/inc/jquery.cookie.js?ver=1556089600"></script>
+            <script src="/inc/jquery.qtip.min.js?ver=1556089600"></script>
+            <script src="/inc/gems.js?ver=1556089600"></script>
+                            <link rel="stylesheet" href="/styles/jquery.tablesorter.css?ver=1556089600" />
+                <script src="/inc/jquery.tablesorter.js?ver=1556089600"></script> 
+                <script src="/inc/jquery.tablesorter.widgets.js?ver=1556089600"></script> 
+                <script src="/inc/jquery.tablesorter.columnselector.js?ver=1556089600"></script>
+                <script src="/inc/gems-table.js?ver=1556089600"></script>
+                                <meta name="Description" content="A table of all troops in Gems of War and their statistics." />
+        </head>
+        <body data-querypath="" data-root="" data-langroot="" >
+            <div class="background"></div>
+                <nav id="cssmenu">
+        <form id="navTroopSearchForm" style="display: none;" action="/troops/"></form>
+        <div class="button"></div>
+        <ul>
+            <li><a class="menu-item" href="/">Home</a></li>
+            <li class="has-sub"><span class="menu-item"><a href="/troops/">Troops</a></span>
+                <ul>
+                    <li><span class="menu-item"><i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="Name" name="filter" form="navTroopSearchForm" /></span></li>
+                    <li><a class="menu-item" href="/trooptable"><i class="fa fa-table" aria-hidden="true"></i>As Table</a></li>
+                </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="/weapons/">Weapons</a></span>
+                <ul>
+                    <li><a class="menu-item" href="/weapontable"><i class="fa fa-table" aria-hidden="true"></i>As Table</a></li>
+                </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="/kingdoms/">Kingdoms</a></span>
+                <ul>
+                    <li><a class="menu-item" href="/kingdomtable"><i class="fa fa-table" aria-hidden="true"></i>As Table</a></li>
+                </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="/classes/">Classes</a></span>
+                <ul>
+                    <li><a class="menu-item" href="/classtable"><i class="fa fa-table" aria-hidden="true"></i>As Table</a></li>
+                </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="#">Extras</a></span>
+                <ul>
+                    <li><a class="menu-item" href="/bosses/">Bosses</a></li>
+                    <li><a class="menu-item" href="/pettable">Pets</a></li>
+                    <li><a class="menu-item" href="/extras/delvetable">Delve Rooms</a></li>
+                    <li><a class="menu-item" href="/extras/quiz"><i class="fa fa-question-circle" aria-hidden="true"></i>Quiz</a></li>
+                    <li><a class="menu-item" href="/extras/timeline"><i class="fa fa-clock-o" aria-hidden="true"></i>Timeline</a></li>
+                    <li><a class="menu-item" href="/extras/traitstones"><i class="fa fa-database" aria-hidden="true"></i>Traitstones</a></li>
+                    <li class="has-sub"><a class="menu-item" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Leaderboards</a>
+                        <ul>
+                            <li><a class="menu-item" href="/extras/leaderboards/troops"><img src="/assets/nav/ascension.png" alt="" />Ascension</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/herolevel"><i class="fa fa-star" aria-hidden="true"></i>Hero Level</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/invasions"><img src="/assets/nav/invasion.png" alt="" />Invasions</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/pets"><img src="/assets/nav/invasion.png" alt="" />Pets</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/weapons"><img src="/assets/nav/invasion.png" alt="" />Weapons</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/renown"><img src="/assets/nav/invasion.png" alt="" />Underworld Renown</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/champlevel"><img src="/assets/nav/invasion.png" alt="" />Champion Level</a></li>
+                        </ul>
+                    </li>
+                                    </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="#">Settings</a></span>
+                <ul>
+                    <li class="has-sub"><a class="menu-item" href="#"><i class="fa fa-globe" aria-hidden="true"></i>Language</a>
+                        <ul>
+                            <li><a class="menu-item" href="/trooptable"><img src="/assets/nav/en-US.png" alt="" />English</a></li>
+                            <li><a class="menu-item" href="/de-DE/trooptable"><img src="/assets/nav/de-DE.png" alt="" />Deutsch</a></li>
+                            <li><a class="menu-item" href="/es-ES/trooptable"><img src="/assets/nav/es-ES.png" alt="" />Español</a></li>
+                            <li><a class="menu-item" href="/fr-FR/trooptable"><img src="/assets/nav/fr-FR.png" alt="" />Français</a></li>
+                            <li><a class="menu-item" href="/it-IT/trooptable"><img src="/assets/nav/it-IT.png" alt="" />Italiano</a></li>
+                            <li><a class="menu-item" href="/ru-RU/trooptable"><img src="/assets/nav/ru-RU.png" alt="" />Русский</a></li>
+                            <li><a class="menu-item" href="/zh-CN/trooptable"><img src="/assets/nav/zh-CN.png" alt="" />中文</a></li>
+                                                    </ul>
+                    </li>
+                    <li class="has-sub"><a class="menu-item" href="#"><img class="css-menu-icon" src="/assets/nav/pcmobile.png" alt="" />Platform</a>
+                        <ul>
+                            <li><a class="menu-item" href="/trooptable"><img class="css-menu-icon" src="/assets/nav/pcmobile.png" alt="" />PC/Mobile</a></li>
+                            <li><a class="menu-item" href="/ps/trooptable"><img class="css-menu-icon" src="/assets/nav/ps.png" alt="" />PlayStation 4</a></li>
+                            <li><a class="menu-item" href="/xbox/trooptable"><img class="css-menu-icon" src="/assets/nav/xbox.png" alt="" />Xbox One</a></li>
+                            <li><a class="menu-item" href="/nin/trooptable"><img class="css-menu-icon" src="/assets/nav/nin.png" alt="" />Nintendo Switch</a></li>
+                                                    </ul>
+                    </li>
+                </ul>
+            </li>
+                            <li><span class="menu-item"><a href="/account/signin"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></span>
+                        </ul>
+        <div class="spacer"></div>
+    </nav>
+                <div class="body long table">
+                    <div class="header">
+        <div class="title">
+            <a class="img-link" href="/">
+                <img class="logo" src="/assets/gemslogo.png" alt="Gems of War" />
+            </a>
+            <br />
+            <div class="title-text">
+                <h1 class="title-shadow">Troops</h1>
+                                <h1 class="title-main">Troops</h1>
+                            </div>
+        </div>
+    </div>
+    <script>
+function getTroopTableWidgetOptions() {
+    var defaultMatch = function (e, n, f, i, $r) {
+        return e.search(f) > -1;
+    };
+
+    var fullKingdomMatch = function (e, n, f, i, $r) {
+        for (var kingdomId in g_globals.kingdoms) {
+            var kingdom = g_globals.kingdoms[kingdomId];
+            if (e === kingdom.name) {
+                return kingdom.isFullKingdom;
+            }
+        }
+        return false;
+    };
+
+    return {
+        filter_functions: { 
+            ".filter-kingdoms": {
+                "Adana": defaultMatch,"All-Seeing Eye": defaultMatch,"Amanithrax": defaultMatch,"Apocalypse": defaultMatch,"Blackhawk": defaultMatch,"Blighted Lands": defaultMatch,"Bright Forest": defaultMatch,"Broken Spire": defaultMatch,"City of Thieves": defaultMatch,"Crypt Keepers": defaultMatch,"Dark Pits": defaultMatch,"Darkstone": defaultMatch,"Dhrak-Zum": defaultMatch,"Divinion Fields": defaultMatch,"Dragon's Claw": defaultMatch,"Drifting Sands": defaultMatch,"Fang Moor": defaultMatch,"Forest of Thorns": defaultMatch,"Ghulvania": defaultMatch,"Glacial Peaks": defaultMatch,"Grosh-Nak": defaultMatch,"Guardians": defaultMatch,"Hall of Guardians": defaultMatch,"IceRift": defaultMatch,"Karakoth": defaultMatch,"Khaziel": defaultMatch,"Khetar": defaultMatch,"Leonis Empire": defaultMatch,"Maugrim Woods": defaultMatch,"Merlantis": defaultMatch,"Mirrored Halls": defaultMatch,"Mist of Scales": defaultMatch,"Pan's Vale": defaultMatch,"Pridelands": defaultMatch,"Primal": defaultMatch,"Primal Rift": defaultMatch,"Sea of Sorrow": defaultMatch,"Shentang": defaultMatch,"Silver Necropolis": defaultMatch,"Silverglade": defaultMatch,"Sin of Maraj": defaultMatch,"Stonesong Eyrie": defaultMatch,"Stormheim": defaultMatch,"Suncrest": defaultMatch,"Sunken Fleet": defaultMatch,"Sword's Edge": defaultMatch,"The Vault": defaultMatch,"The Warrens": defaultMatch,"Urskaya": defaultMatch,"Whitehelm": defaultMatch,"Wild Court": defaultMatch,"Wild Plains": defaultMatch,"Zaejin": defaultMatch,"Zhul'Kari": defaultMatch,            }
+        }
+    };
+}
+</script>
+<div class="content" id="content">
+    <div class="tablecontent block">
+        <div class="tablewidgets">
+            <div class="columnSelectorWrapper">
+                <input id="colSelect1" type="checkbox" class="hidden">
+                <label class="columnSelectorButton" for="colSelect1"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> Choose Columns</label>
+                <div id="columnSelector" class="columnSelector"></div>
+            </div>
+            <div class="troop-count-label"> <span id='troopCount'>0</span> found.</div>
+            <div id="troopTablePermalink" class="hasqtip permalink" data-prefix="http://gowdb.com/trooptable" title="."><i class="fa fa-link fa-lg" aria-hidden="true"></i> Link</div>
+        </div>
+        <table id="troopTable" class="tablesorter">
+            <thead>
+                <tr>
+                    <th data-key="name">Name</th>
+                    <th data-key="rarity" class="filter-select ellipsis">Rarity</th>
+                    <th data-key="kingdom" class="filter-kingdoms">Kingdom</th>
+                    <th data-key="type">Troop Type</th>
+                    <th data-key="cost" class="columnSelector-false sortInitialOrder-desc">Cost</th>
+                    <th data-key="colors" class="sortInitialOrder-desc">Colors</th>
+                    <th data-key="effects" class="effects">Spell Effects</th>
+                    <th data-key="spellbonus" class="columnSelector-false">Spell Bonus</th>
+                    <th data-key="traits">Traits</th>
+                    <th data-key="releasedate" class="sortInitialOrder-desc columnSelector-false">Release Date</th>
+                    <th data-key="attack" class="columnSelector-false sortInitialOrder-desc">Attack</th>
+                    <th data-key="life" class="columnSelector-false sortInitialOrder-desc">Life</th>
+                    <th data-key="armor" class="columnSelector-false sortInitialOrder-desc">Armor</th>
+                    <th data-key="durability" class="columnSelector-false sortInitialOrder-desc"><span title="Life plus Armor">Durability</span></th>
+                    <th data-key="toughness" class="columnSelector-false sortInitialOrder-desc"><span title="Skull damage reduction">Toughness</span></th>
+                </tr>
+            </thead>
+
+        <tr id="troop_6057" class="troop-row" data-id="6057" data-name="Wolf Knight" data-colors="yellow brown" data-filebase="Troop_K14_01">
+        <td class="draggable" draggable="true" ondragstart="return handleTroopDragStart(event)" ondragend="return handleTroopDragEnd(event)">
+            <span>
+                <a href="http://gowdb.com/troops/6057">Wolf Knight</a>
+                <a class="action" href="#action" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+            </span>
+        </td>
+        <td class="rarity2 ellipsis" data-text="4 Rare">Rare</td>
+        <td>Sword's Edge/Glacial Peaks</td>
+        <td>Wargare-Knight</td>
+        <td>8</td>
+        <td class="spell yellow brown" data-text="17 T05 T11 T09 T17 T15 T35 Yellow/Brown">Yellow/&#x200b;Brown</td>
+        <td class="spell "><span class="hasqtip" title="Deal [Magic + 1] true damage to an Enemy. If the Enemy is wounded, deal 6 more damage.">Hunt</span>: True Damage</td>
+        <td>Damaged</td>
+        <td><span class="trait hasqtip" data-details="/troops/6057/traits" data-index="0"  title="Immunity to Burning and Faerie Fire.">Fireproof</span>, <span class="trait hasqtip" data-details="/troops/6057/traits" data-index="1"  title="Gain 1 Magic for each Yellow ally.">Air Spirit</span>, <span class="trait hasqtip" data-details="/troops/6057/traits" data-index="2"  title="50% chance to ignore Armor with Skull damage.">Armor Piercing</span></td>
+        <td data-text="1414490400 : 10/28/2014 ()">10/28/2014 ()</td>
+        <td>14</td>
+        <td>21</td>
+        <td>23</td>
+        <td>44</td>
+        <td>0%</td>
+    </tr>
+        <tr id="troop_6300" class="troop-row" data-id="6300" data-name="Wulfgarok" data-colors="green red purple" data-filebase="Troop_K16_10">
+        <td class="draggable" draggable="true" ondragstart="return handleTroopDragStart(event)" ondragend="return handleTroopDragEnd(event)">
+            <span>
+                <a href="http://gowdb.com/troops/6300">Wulfgarok</a>
+                <a class="action" href="#action" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+            </span>
+        </td>
+        <td class="rarity6 ellipsis" data-text="0 Mythic">Mythic</td>
+        <td>Maugrim Woods</td>
+        <td>Wargare-Beast</td>
+        <td>22</td>
+        <td class="spell green red purple" data-text="324 T01 T07 T13 T25 T27 T39 Green/Red/Purple">Green/&#x200b;Red/&#x200b;Purple</td>
+        <td class="spell "><span class="hasqtip" title="Deal [Magic + 2] damage to an enemy, boosted by Wargare Allies. If the enemy dies, devour a random enemy. [4x]">Fangs and Claws</span>: Deal Damage, Devour (sometimes)</td>
+        <td>Wargare, Kill</td>
+        <td><span class="trait hasqtip" data-details="/troops/6300/traits" data-index="0"  title="Gain 1 Life when an ally casts a spell.">Invigorated</span>, <span class="trait hasqtip" data-details="/troops/6300/traits" data-index="1"  title="Immune to all Status Effects, Devour, and Mana Burn.">Impervious</span>, <span class="trait hasqtip" data-details="/troops/6300/traits" data-index="2"  title="Give 2 Attack and Magic to Allied Wargare when matching 4 or more Gems.">First Wargare</span></td>
+        <td data-text="1551931200 : 03/07/2019 (4.2.5)">03/07/2019 (4.2.5)</td>
+        <td>24</td>
+        <td>24</td>
+        <td>13</td>
+        <td>37</td>
+        <td>0%</td>
+    </tr>
+        <tr id="troop_6189" class="troop-row" data-id="6189" data-name="Yeti" data-colors="blue brown" data-filebase="Troop_K22_03">
+        <td class="draggable" draggable="true" ondragstart="return handleTroopDragStart(event)" ondragend="return handleTroopDragEnd(event)">
+            <span>
+                <a href="http://gowdb.com/troops/6189">Yeti</a>
+                <a class="action" href="#action" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+            </span>
+        </td>
+        <td class="rarity3 ellipsis" data-text="3 Ultra-Rare">Ultra-Rare</td>
+        <td>Glacial Peaks</td>
+        <td>Beast</td>
+        <td>11</td>
+        <td class="spell blue brown" data-text="1025 T00 T06 T11 T12 T17 T23 Blue/Brown">Blue/&#x200b;Brown</td>
+        <td class="spell "><span class="hasqtip" title="Deal [Magic + 4] damage to an enemy. Deal double damage if the enemy is Frozen.">Avalanche</span>: Deal Damage</td>
+        <td>Frozen</td>
+        <td><span class="trait hasqtip" data-details="/troops/6189/traits" data-index="0"  title="Gain 1 Life for each Blue ally.">Water Heart</span>, <span class="trait hasqtip" data-details="/troops/6189/traits" data-index="1"  title="Inflict Frozen when doing Skull damage.">Chill Touch</span>, <span class="trait hasqtip" data-details="/troops/6189/traits" data-index="2"  title="Gain bonus Blue Mana from Blue Gem matches.">Water Link</span></td>
+        <td data-text="1464516000 : 05/29/2016 (2.0.0)">05/29/2016 (2.0.0)</td>
+        <td>19</td>
+        <td>24</td>
+        <td>11</td>
+        <td>35</td>
+        <td>0%</td>
+    </tr>
+        <tr id="troop_6166" class="troop-row" data-id="6166" data-name="Zephyros" data-colors="blue yellow" data-filebase="Troop_K15_05">
+        <td class="draggable" draggable="true" ondragstart="return handleTroopDragStart(event)" ondragend="return handleTroopDragEnd(event)">
+            <span>
+                <a href="http://gowdb.com/troops/6166">Zephyros</a>
+                <a class="action" href="#action" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+            </span>
+        </td>
+        <td class="rarity4 ellipsis" data-text="2 Epic">Epic</td>
+        <td>Stormheim</td>
+        <td>Elemental-Giant</td>
+        <td>12</td>
+        <td class="spell blue yellow" data-text="1040 T03 T15 T12 T09 T21 T39 Blue/Yellow">Blue/&#x200b;Yellow</td>
+        <td class="spell "><span class="hasqtip" title="Destroy a column. Deal [Magic + 8] scatter damage, boosted by Yellow Gems destroyed. [10x]">Lightning Bolt</span>: Destroy Gems, Deal Damage (all)</td>
+        <td></td>
+        <td><span class="trait hasqtip" data-details="/troops/6166/traits" data-index="0"  title="Allied Giants gain 2 Life.">Giant Bond</span>, <span class="trait hasqtip" data-details="/troops/6166/traits" data-index="1"  title="Gain 2 Life on 4 or 5 Gem matches.">Huge</span>, <span class="trait hasqtip" data-details="/troops/6166/traits" data-index="2"  title="Gain bonus Yellow Mana from Yellow Gem matches.">Air Link</span></td>
+        <td data-text="1451203200 : 12/27/2015 (1.0.8)">12/27/2015 (1.0.8)</td>
+        <td>17</td>
+        <td>31</td>
+        <td>12</td>
+        <td>43</td>
+        <td>0%</td>
+    </tr>
+        <tr id="troop_6591" class="troop-row" data-id="6591" data-name="Zhak Boomgrizzle" data-colors="yellow brown" data-filebase="Troop_K10_16">
+        <td class="draggable" draggable="true" ondragstart="return handleTroopDragStart(event)" ondragend="return handleTroopDragEnd(event)">
+            <span>
+                <a href="http://gowdb.com/troops/6591">Zhak Boomgrizzle</a>
+                <a class="action" href="#action" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+            </span>
+        </td>
+        <td class="rarity4 ellipsis" data-text="2 Epic">Epic</td>
+        <td>Khaziel</td>
+        <td>Dwarf</td>
+        <td>12</td>
+        <td class="spell yellow brown" data-text="17 T03 T15 T17 T09 T35 T39 Yellow/Brown">Yellow/&#x200b;Brown</td>
+        <td class="spell "><span class="hasqtip" title="Deal [Magic + 4] damage to an enemy. If they are a Tower, deal 3x - 5x damage, based on my Ascensions. Explode 3 Red Gems.">Fire in the Hole!</span>: Deal Damage, Explode Gems</td>
+        <td>Ascension castle</td>
+        <td><span class="trait hasqtip" data-details="/troops/6591/traits" data-index="0"  title="Allied Dwarves gain 2 Life.">Dwarf Bond</span>, <span class="trait hasqtip" data-details="/troops/6591/traits" data-index="1"  title="Immune to Stun, Poison, Disease, Death Mark and Devour.">Fortitude</span>, <span class="trait hasqtip" data-details="/troops/6591/traits" data-index="2"  title="Deal 3x - 5x Skull damage vs. Towers, based on my ascension.">Siegebreaker</span></td>
+        <td data-text="1540796400 : 10/29/2018 (4.1.0)">10/29/2018 (4.1.0)</td>
+        <td>21</td>
+        <td>21</td>
+        <td>15</td>
+        <td>36</td>
+        <td>0%</td>
+    </tr>
+        </table>
+    </div>
+</div>
+    <div class="block">
+        <div>
+            <div id="queryLastUpdated">Last updated:  10/12/2019</div>
+            GoWDB.com © Lyya (<a href="mailto:ashenbloom@gmail.com">ashenbloom@gmail.com</a>)
+        </div>
+        <div>
+            This is a fan site. All Gems of War contents are owned by Infinity Plus Two.
+        </div>
+    </div>
+                </div>
+                <div id="teambox" class="teambox">
+        <div class="active-team">
+            <div class="team-header">
+                <div class="close-button spacer"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></div>
+                <div class="team-header-title">Team Builder</div>
+                <div class="close-button"><a href="#" onclick="return handleTroopRemoveAll(event)"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></a></div>
+            </div>
+                            <div class="team-slot" id="teamslot1"
+                     ondragstart="return handleTroopDragStart(event)" ondragover="return handleTroopDragOver(event)" 
+                     ondragenter="return handleTroopDragEnter(event)" ondragleave="return handleTroopDragLeave(event)" 
+                     ondrop="return handleTroopDrop(event)" ondragend="return handleTroopDragEnd(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false" alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name" data-dragtext="Drag troops here"><a class="team-link" href="#" draggable="false"></a></div>
+                                                <a href="#" onclick="return handleTroopRemove(event)" draggable="false"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></a>
+                                            </div>
+                </div>
+                                <div class="team-slot" id="teamslot2"
+                     ondragstart="return handleTroopDragStart(event)" ondragover="return handleTroopDragOver(event)" 
+                     ondragenter="return handleTroopDragEnter(event)" ondragleave="return handleTroopDragLeave(event)" 
+                     ondrop="return handleTroopDrop(event)" ondragend="return handleTroopDragEnd(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false" alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name" data-dragtext="Drag troops here"><a class="team-link" href="#" draggable="false"></a></div>
+                                                    <a class="upArrow" href="#" onclick="return handleTroopMoveUp(event)" draggable="false"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></a>
+                                                    <a href="#" onclick="return handleTroopRemove(event)" draggable="false"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></a>
+                                            </div>
+                </div>
+                                <div class="team-slot" id="teamslot3"
+                     ondragstart="return handleTroopDragStart(event)" ondragover="return handleTroopDragOver(event)" 
+                     ondragenter="return handleTroopDragEnter(event)" ondragleave="return handleTroopDragLeave(event)" 
+                     ondrop="return handleTroopDrop(event)" ondragend="return handleTroopDragEnd(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false" alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name" data-dragtext="Drag troops here"><a class="team-link" href="#" draggable="false"></a></div>
+                                                    <a class="upArrow" href="#" onclick="return handleTroopMoveUp(event)" draggable="false"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></a>
+                                                    <a href="#" onclick="return handleTroopRemove(event)" draggable="false"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></a>
+                                            </div>
+                </div>
+                                <div class="team-slot" id="teamslot4"
+                     ondragstart="return handleTroopDragStart(event)" ondragover="return handleTroopDragOver(event)" 
+                     ondragenter="return handleTroopDragEnter(event)" ondragleave="return handleTroopDragLeave(event)" 
+                     ondrop="return handleTroopDrop(event)" ondragend="return handleTroopDragEnd(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false" alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name" data-dragtext="Drag troops here"><a class="team-link" href="#" draggable="false"></a></div>
+                                                    <a class="upArrow" href="#" onclick="return handleTroopMoveUp(event)" draggable="false"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></a>
+                                                    <a href="#" onclick="return handleTroopRemove(event)" draggable="false"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></a>
+                                                    <a class="suggest" href="#" onclick="return handleSuggestToggle(event)" draggable="false"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></a>
+                                                </div>
+                </div>
+                            <div id="team-publish" class="team-publish">
+                <a id="teamPublishLink" href="#" onclick="return handleTeamPublish(event)" data-prefix="/teams/">Publish Team <i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="suggestions" id="suggestions">
+            <div class="team-header">
+                <div class="close-button spacer"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></div>
+                <div class="team-header-title">Suggestions</div>
+                <div class="close-button"><a href="#" onclick="return handleSuggestToggle(event)"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></a></div>
+            </div>
+                            <div class="team-slot team-suggestion" id="teamsuggestion1"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion2"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion3"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion4"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion5"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion6"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion7"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion8"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion9"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion10"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                        </div>
+    </div>  
+            </body>
+    </html>
+    

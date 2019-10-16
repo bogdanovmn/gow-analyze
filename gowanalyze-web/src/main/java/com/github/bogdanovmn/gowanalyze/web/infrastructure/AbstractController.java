@@ -1,7 +1,7 @@
 package com.github.bogdanovmn.gowanalyze.web.infrastructure;
 
-import com.github.bogdanovmn.gowanalyze.web.infrastructure.config.security.ProjectSecurityService;
 import com.github.bogdanovmn.gowanalyze.model.entity.User;
+import com.github.bogdanovmn.gowanalyze.web.infrastructure.config.security.ProjectSecurityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ModelAttribute;
 

@@ -1,0 +1,26 @@
+@startuml
+
+class Troop {
+    +id
+    +trait_set_id
+}
+
+class HeroClass {
+    +id
+    +trait_set_id
+}
+
+class TraitSet {
+    +id
+}
+
+class Trait {
+    +id
+    +description
+}
+
+Troop --> TraitSet
+HeroClass --> TraitSet
+TraitSet --> Trait
+
+@enduml

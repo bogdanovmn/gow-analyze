@@ -6,19 +6,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import java.util.Set;
 
 @Getter
 @Setter
 @NoArgsConstructor
 
 @Entity
-public class UserRole extends BaseEntityWithUniqueName {
-	@ManyToMany(mappedBy = "roles")
-	private Set<User> users;
-
-	public UserRole(String name) {
-		super(name);
-	}
+public class Trait extends BaseEntityWithUniqueName {
+	private String description;
 }

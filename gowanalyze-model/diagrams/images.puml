@@ -1,0 +1,21 @@
+@startuml
+
+class Troop {
+    +id
+    +image_id
+}
+class Kingdom {
+    +id
+    +image_id
+}
+
+class Image {
+    +id
+    +original
+    +small
+}
+
+Troop --> Image
+Kingdom --> Image
+
+@enduml

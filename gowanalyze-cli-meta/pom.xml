@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <modules>
-		<module>gowanalyze-cli-something</module>
+		<module>gowanalyze-cli-import</module>
 	</modules>
 
 	<dependencies>

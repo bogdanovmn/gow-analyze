@@ -1,8 +1,8 @@
 package com.github.bogdanovmn.gowanalyze.model.common;
 
+import com.github.bogdanovmn.common.spring.jpa.EntityRepositoryMapFactory;
 import com.github.bogdanovmn.gowanalyze.model.entity.UserRole;
 import com.github.bogdanovmn.gowanalyze.model.entity.UserRoleRepository;
-import com.github.bogdanovmn.common.spring.jpa.EntityRepositoryMapFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

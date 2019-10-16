@@ -1,14 +1,13 @@
 package com.github.bogdanovmn.gowanalyze.web.infrastructure;
 
+import com.github.bogdanovmn.common.spring.menu.MenuBuilder;
+import com.github.bogdanovmn.common.spring.menu.MenuItem;
 import com.github.bogdanovmn.gowanalyze.web.infrastructure.config.mustache.Layout;
 import com.samskivert.mustache.Mustache;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.beans.factory.annotation.Value;
-import com.github.bogdanovmn.common.spring.menu.MenuBuilder;
-import com.github.bogdanovmn.common.spring.menu.MenuItem;
-
 
 import java.util.Map;
 

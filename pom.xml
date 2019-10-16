@@ -14,6 +14,7 @@
 		<module>gowanalyze-cli-meta</module>
 		<module>gowanalyze-model</module>
 		<module>gowanalyze-web</module>
+		<module>gowanalyze-import</module>
 	</modules>
 
 	<properties>
@@ -46,6 +47,11 @@
 				<artifactId>gowanalyze-model</artifactId>
 				<version>1.0-SNAPSHOT</version>
 			</dependency>
+			<dependency>
+				<groupId>com.github.bogdanovmn.gowanalyze</groupId>
+				<artifactId>gowanalyze-import</artifactId>
+				<version>1.0-SNAPSHOT</version>
+			</dependency>
 
 			<!-- My Libs -->
 
@@ -64,8 +70,19 @@
 				<artifactId>common-spring</artifactId>
 				<version>${common.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.github.bogdanovmn.dwlc</groupId>
+				<artifactId>download-with-local-cache</artifactId>
+				<version>1.7.0</version>
+			</dependency>
 
 			<!-- Libs -->
+
+			<dependency>
+				<groupId>org.jsoup</groupId>
+				<artifactId>jsoup</artifactId>
+				<version>1.10.3</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.slf4j</groupId>

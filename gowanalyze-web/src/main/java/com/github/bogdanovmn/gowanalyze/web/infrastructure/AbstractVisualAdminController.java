@@ -1,8 +1,8 @@
 package com.github.bogdanovmn.gowanalyze.web.infrastructure;
 
+import com.github.bogdanovmn.common.spring.menu.MenuItem;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.github.bogdanovmn.common.spring.menu.MenuItem;
 
 
 @Controller

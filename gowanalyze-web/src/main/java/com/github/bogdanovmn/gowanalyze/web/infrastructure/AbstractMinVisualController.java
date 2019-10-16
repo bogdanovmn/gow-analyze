@@ -3,9 +3,8 @@ package com.github.bogdanovmn.gowanalyze.web.infrastructure;
 import com.github.bogdanovmn.gowanalyze.web.infrastructure.config.mustache.Layout;
 import com.samskivert.mustache.Mustache;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.beans.factory.annotation.Value;
-
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.Map;
 
