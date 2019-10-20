@@ -23,7 +23,9 @@ class TroopsImport {
 	}
 
 	private void importKingdoms(GowdbSiteContent siteContent) {
+		for (KingdomTableContent kingdomsTableContent : siteContent.kingdomsTablePage().kingdoms()) {
 
+		}
 	}
 
 	private void importTroops(GowdbSiteContent siteContent) {

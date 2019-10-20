@@ -1,0 +1,407 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+                <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="alternate" hreflang="en-US" href="/kingdomtable">
+    <link rel="alternate" hreflang="es-ES" href="/es-ES/kingdomtable">
+    <link rel="alternate" hreflang="de-DE" href="/de-DE/kingdomtable">
+    <link rel="alternate" hreflang="it-IT" href="/it-IT/kingdomtable">
+    <link rel="alternate" hreflang="fr-FR" href="/fr-FR/kingdomtable">
+    <link rel="alternate" hreflang="ru-RU" href="/ru-RU/kingdomtable">
+    <link rel="alternate" hreflang="zh-CN" href="/zh-CN/kingdomtable">
+    <link rel="canonical" href="/kingdomtable">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/icons/manifest.json">
+        <script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://gowdb.com","name":"Home"}}
+                    ,{"@type":"ListItem","position":2,"item":{"@id":"http://gowdb.com/kingdomtable","name":"Kingdom Table"}}
+                    ]}
+    </script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Gems of War Database","alternateName":"GoWDB","url":"http://gowdb.com"}</script>
+                <title>Kingdom Table - Gems of War Database</title>
+                            <link rel="stylesheet" href="/styles/gems.scss?ver=1556089600" />
+                            <link rel="stylesheet" href="/styles/jquery.qtip.min.css?ver=1556089600" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+            <script src="/inc/jquery-2.2.3.min.js?ver=1556089600"></script>
+            <script src="/inc/jquery.cookie.js?ver=1556089600"></script>
+            <script src="/inc/jquery.qtip.min.js?ver=1556089600"></script>
+            <script src="/inc/gems.js?ver=1556089600"></script>
+                            <link rel="stylesheet" href="/styles/jquery.tablesorter.css?ver=1556089600" />
+                <script src="/inc/jquery.tablesorter.js?ver=1556089600"></script> 
+                <script src="/inc/jquery.tablesorter.widgets.js?ver=1556089600"></script> 
+                <script src="/inc/jquery.tablesorter.columnselector.js?ver=1556089600"></script>
+                <script src="/inc/gems-table.js?ver=1556089600"></script>
+                                <meta name="Description" content="A table of all kingdoms in Gems of War and their statistics." />
+        </head>
+        <body data-querypath="" data-root="" data-langroot="" >
+            <div class="background"></div>
+                <nav id="cssmenu">
+        <form id="navTroopSearchForm" style="display: none;" action="/troops/"></form>
+        <div class="button"></div>
+        <ul>
+            <li><a class="menu-item" href="/">Home</a></li>
+            <li class="has-sub"><span class="menu-item"><a href="/troops/">Troops</a></span>
+                <ul>
+                    <li><span class="menu-item"><i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="Name" name="filter" form="navTroopSearchForm" /></span></li>
+                    <li><a class="menu-item" href="/trooptable"><i class="fa fa-table" aria-hidden="true"></i>As Table</a></li>
+                </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="/weapons/">Weapons</a></span>
+                <ul>
+                    <li><a class="menu-item" href="/weapontable"><i class="fa fa-table" aria-hidden="true"></i>As Table</a></li>
+                </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="/kingdoms/">Kingdoms</a></span>
+                <ul>
+                    <li><a class="menu-item" href="/kingdomtable"><i class="fa fa-table" aria-hidden="true"></i>As Table</a></li>
+                </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="/classes/">Classes</a></span>
+                <ul>
+                    <li><a class="menu-item" href="/classtable"><i class="fa fa-table" aria-hidden="true"></i>As Table</a></li>
+                </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="#">Extras</a></span>
+                <ul>
+                    <li><a class="menu-item" href="/bosses/">Bosses</a></li>
+                    <li><a class="menu-item" href="/pettable">Pets</a></li>
+                    <li><a class="menu-item" href="/extras/delvetable">Delve Rooms</a></li>
+                    <li><a class="menu-item" href="/extras/quiz"><i class="fa fa-question-circle" aria-hidden="true"></i>Quiz</a></li>
+                    <li><a class="menu-item" href="/extras/timeline"><i class="fa fa-clock-o" aria-hidden="true"></i>Timeline</a></li>
+                    <li><a class="menu-item" href="/extras/traitstones"><i class="fa fa-database" aria-hidden="true"></i>Traitstones</a></li>
+                    <li class="has-sub"><a class="menu-item" href="#"><i class="fa fa-trophy" aria-hidden="true"></i>Leaderboards</a>
+                        <ul>
+                            <li><a class="menu-item" href="/extras/leaderboards/troops"><img src="/assets/nav/ascension.png" alt="" />Ascension</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/herolevel"><i class="fa fa-star" aria-hidden="true"></i>Hero Level</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/invasions"><img src="/assets/nav/invasion.png" alt="" />Invasions</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/pets"><img src="/assets/nav/invasion.png" alt="" />Pets</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/weapons"><img src="/assets/nav/invasion.png" alt="" />Weapons</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/renown"><img src="/assets/nav/invasion.png" alt="" />Underworld Renown</a></li>
+                            <li><a class="menu-item" href="/extras/leaderboards/champlevel"><img src="/assets/nav/invasion.png" alt="" />Champion Level</a></li>
+                        </ul>
+                    </li>
+                                    </ul>
+            </li>
+            <li class="has-sub"><span class="menu-item"><a href="#">Settings</a></span>
+                <ul>
+                    <li class="has-sub"><a class="menu-item" href="#"><i class="fa fa-globe" aria-hidden="true"></i>Language</a>
+                        <ul>
+                            <li><a class="menu-item" href="/kingdomtable"><img src="/assets/nav/en-US.png" alt="" />English</a></li>
+                            <li><a class="menu-item" href="/de-DE/kingdomtable"><img src="/assets/nav/de-DE.png" alt="" />Deutsch</a></li>
+                            <li><a class="menu-item" href="/es-ES/kingdomtable"><img src="/assets/nav/es-ES.png" alt="" />Español</a></li>
+                            <li><a class="menu-item" href="/fr-FR/kingdomtable"><img src="/assets/nav/fr-FR.png" alt="" />Français</a></li>
+                            <li><a class="menu-item" href="/it-IT/kingdomtable"><img src="/assets/nav/it-IT.png" alt="" />Italiano</a></li>
+                            <li><a class="menu-item" href="/ru-RU/kingdomtable"><img src="/assets/nav/ru-RU.png" alt="" />Русский</a></li>
+                            <li><a class="menu-item" href="/zh-CN/kingdomtable"><img src="/assets/nav/zh-CN.png" alt="" />中文</a></li>
+                                                    </ul>
+                    </li>
+                    <li class="has-sub"><a class="menu-item" href="#"><img class="css-menu-icon" src="/assets/nav/pcmobile.png" alt="" />Platform</a>
+                        <ul>
+                            <li><a class="menu-item" href="/kingdomtable"><img class="css-menu-icon" src="/assets/nav/pcmobile.png" alt="" />PC/Mobile</a></li>
+                            <li><a class="menu-item" href="/ps/kingdomtable"><img class="css-menu-icon" src="/assets/nav/ps.png" alt="" />PlayStation 4</a></li>
+                            <li><a class="menu-item" href="/xbox/kingdomtable"><img class="css-menu-icon" src="/assets/nav/xbox.png" alt="" />Xbox One</a></li>
+                            <li><a class="menu-item" href="/nin/kingdomtable"><img class="css-menu-icon" src="/assets/nav/nin.png" alt="" />Nintendo Switch</a></li>
+                                                    </ul>
+                    </li>
+                </ul>
+            </li>
+                            <li><span class="menu-item"><a href="/account/signin"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></span>
+                        </ul>
+        <div class="spacer"></div>
+    </nav>
+                <div class="body long table">
+                    <div class="header">
+        <div class="title">
+            <a class="img-link" href="/">
+                <img class="logo" src="/assets/gemslogo.png" alt="Gems of War" />
+            </a>
+            <br />
+            <div class="title-text">
+                <h1 class="title-shadow">Kingdoms</h1>
+                                <h1 class="title-main">Kingdoms</h1>
+                            </div>
+        </div>
+    </div>
+    <style>
+    .banner-colors {
+        display: flex;
+        align-items: center;
+    }
+    
+    .banner-colors img {
+        height: 20px;
+        margin-left: 1px;
+        margin-right: 6px;
+    }
+
+    .banner-colors img.penalty {
+        opacity: 0.7;
+    }
+    
+    .banner-colors span.penalty {
+        color: red;
+    }
+</style>
+<div class="content" id="content">
+    <div class="tablecontent block">
+        <div class="tablewidgets">
+            <div class="columnSelectorWrapper">
+                <input id="colSelect1" type="checkbox" class="hidden">
+                <label class="columnSelectorButton" for="colSelect1"><i class="fa fa-cog fa-lg" aria-hidden="true"></i> Choose Columns</label>
+                <div id="columnSelector" class="columnSelector"></div>
+            </div>
+            <div class="troop-count-label"> <span id='troopCount'>0</span> found.</div>
+            <div id="troopTablePermalink" class="hasqtip permalink" data-prefix="http://gowdb.com/kingdomtable" title="."><i class="fa fa-link fa-lg" aria-hidden="true"></i> Link</div>
+        </div>
+        <table id="troopTable" class="tablesorter">
+            <thead>
+                <tr>
+                    <th data-key="name">Name</th>
+                    <th data-key="mastery" class="sortInitialOrder-desc">Mastery</th>
+                    <th data-key="stat">Bonus</th>
+                    <th data-key="arcane">Traitstones</th>
+                    <th data-key="gold" class="sortInitialOrder-desc">Gold</th>
+                    <th data-key="glory" class="sortInitialOrder-desc">Glory</th>
+                    <th data-key="souls" class="sortInitialOrder-desc">Souls</th>
+                    <th data-key="troops" class="sortInitialOrder-desc">Troops</th>
+                    <th data-key="banner" class="sortInitialOrder-desc">Banner</th>
+                </tr>
+            </thead>
+                <tr id="kingdom_3001">
+        <td><a href="kingdoms/3001">Adana</a></td>
+    <td class="spell yellow" data-text="16 Yellow">Yellow</a></td>
+    <td>Armor</a></td>
+            <td class="spell red yellow" data-text="30-Arcane Storm">Arcane Storm <a href="trooptable?filter-colors=T30">(Troops)</a></td>
+            <td>175</a></td>
+    <td>2</a></td>
+    <td>4</a></td>
+    <td><a href="trooptable?filter-kingdom=Adana">All (19)</a></td>
+    <td data-text="64 16  +1 Red; +1 Yellow; "><span class='banner-colors'><span class='bonus'>+1</span> <img src='/assets/mana/small_red.png' class='bonus' alt='' /> <span class='bonus'>+1</span> <img src='/assets/mana/small_yellow.png' class='bonus' alt='' /> </span></td>
+    </tr>
+        <tr id="kingdom_3039">
+        <td><a href="kingdoms/3039">All-Seeing Eye</a></td>
+    <td class="spell " data-text="0 "></a></td>
+    <td></a></td>
+            <td class="spell"></td>
+            <td></a></td>
+    <td></a></td>
+    <td></a></td>
+    <td><a href="trooptable?filter-kingdom=All-Seeing Eye">All (4)</a></td>
+    <td data-text="512 1024 1  +2 Green; +1 Blue; -1 Brown; "><span class='banner-colors'><span class='bonus'>+2</span> <img src='/assets/mana/small_green.png' class='bonus' alt='' /> <span class='bonus'>+1</span> <img src='/assets/mana/small_blue.png' class='bonus' alt='' /> <span class='penalty'>-1</span> <img src='/assets/mana/small_brown.png' class='penalty' alt='' /> </span></td>
+    </tr>
+        </table>
+    </div>
+</div>
+    <div class="block">
+        <div>
+            <div id="queryLastUpdated">Last updated:  10/18/2019</div>
+            GoWDB.com © Lyya (<a href="mailto:ashenbloom@gmail.com">ashenbloom@gmail.com</a>)
+        </div>
+        <div>
+            This is a fan site. All Gems of War contents are owned by Infinity Plus Two.
+        </div>
+    </div>
+                </div>
+                <div id="teambox" class="teambox">
+        <div class="active-team">
+            <div class="team-header">
+                <div class="close-button spacer"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></div>
+                <div class="team-header-title">Team Builder</div>
+                <div class="close-button"><a href="#" onclick="return handleTroopRemoveAll(event)"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></a></div>
+            </div>
+                            <div class="team-slot" id="teamslot1"
+                     ondragstart="return handleTroopDragStart(event)" ondragover="return handleTroopDragOver(event)" 
+                     ondragenter="return handleTroopDragEnter(event)" ondragleave="return handleTroopDragLeave(event)" 
+                     ondrop="return handleTroopDrop(event)" ondragend="return handleTroopDragEnd(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false" alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name" data-dragtext="Drag troops here"><a class="team-link" href="#" draggable="false"></a></div>
+                                                <a href="#" onclick="return handleTroopRemove(event)" draggable="false"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></a>
+                                            </div>
+                </div>
+                                <div class="team-slot" id="teamslot2"
+                     ondragstart="return handleTroopDragStart(event)" ondragover="return handleTroopDragOver(event)" 
+                     ondragenter="return handleTroopDragEnter(event)" ondragleave="return handleTroopDragLeave(event)" 
+                     ondrop="return handleTroopDrop(event)" ondragend="return handleTroopDragEnd(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false" alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name" data-dragtext="Drag troops here"><a class="team-link" href="#" draggable="false"></a></div>
+                                                    <a class="upArrow" href="#" onclick="return handleTroopMoveUp(event)" draggable="false"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></a>
+                                                    <a href="#" onclick="return handleTroopRemove(event)" draggable="false"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></a>
+                                            </div>
+                </div>
+                                <div class="team-slot" id="teamslot3"
+                     ondragstart="return handleTroopDragStart(event)" ondragover="return handleTroopDragOver(event)" 
+                     ondragenter="return handleTroopDragEnter(event)" ondragleave="return handleTroopDragLeave(event)" 
+                     ondrop="return handleTroopDrop(event)" ondragend="return handleTroopDragEnd(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false" alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name" data-dragtext="Drag troops here"><a class="team-link" href="#" draggable="false"></a></div>
+                                                    <a class="upArrow" href="#" onclick="return handleTroopMoveUp(event)" draggable="false"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></a>
+                                                    <a href="#" onclick="return handleTroopRemove(event)" draggable="false"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></a>
+                                            </div>
+                </div>
+                                <div class="team-slot" id="teamslot4"
+                     ondragstart="return handleTroopDragStart(event)" ondragover="return handleTroopDragOver(event)" 
+                     ondragenter="return handleTroopDragEnter(event)" ondragleave="return handleTroopDragLeave(event)" 
+                     ondrop="return handleTroopDrop(event)" ondragend="return handleTroopDragEnd(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false" alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name" data-dragtext="Drag troops here"><a class="team-link" href="#" draggable="false"></a></div>
+                                                    <a class="upArrow" href="#" onclick="return handleTroopMoveUp(event)" draggable="false"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></a>
+                                                    <a href="#" onclick="return handleTroopRemove(event)" draggable="false"><i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i></a>
+                                                    <a class="suggest" href="#" onclick="return handleSuggestToggle(event)" draggable="false"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></a>
+                                                </div>
+                </div>
+                            <div id="team-publish" class="team-publish">
+                <a id="teamPublishLink" href="#" onclick="return handleTeamPublish(event)" data-prefix="/teams/">Publish Team <i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="suggestions" id="suggestions">
+            <div class="team-header">
+                <div class="close-button spacer"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></div>
+                <div class="team-header-title">Suggestions</div>
+                <div class="close-button"><a href="#" onclick="return handleSuggestToggle(event)"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></a></div>
+            </div>
+                            <div class="team-slot team-suggestion" id="teamsuggestion1"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion2"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion3"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion4"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion5"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion6"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion7"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion8"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion9"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                                <div class="team-slot team-suggestion" id="teamsuggestion10"
+                     ondragstart="return handleTroopDragStart(event)"
+                     >
+                    <div class="team-cell">
+                        <img class="strip" draggable="false" alt="Strip" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="fader"></div>
+                        <img class="icon" draggable="false"  alt="Icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                        <div class="name"><a class="team-link" href="#" draggable="false"></a></div>
+                        <a href="#" onclick="return handleTroopAdd(event)" draggable="false"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                        </div>
+    </div>  
+            </body>
+    </html>
+    

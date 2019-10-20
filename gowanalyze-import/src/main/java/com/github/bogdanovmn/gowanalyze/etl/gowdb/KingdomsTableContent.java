@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @AllArgsConstructor
-class TroopsTableContent {
+class KingdomsTableContent {
 	private final Document html;
 
-	List<TroopTableContent> troops() {
-		return html.select("table[id=troopTable] tr[id^=troop]").stream()
-			.map(TroopTableContent::new)
+	List<KingdomTableContent> kingdoms() {
+		return html.select("table[id=troopTable] tr[id^=kingdom]").stream()
+			.map(KingdomTableContent::new)
 			.collect(Collectors.toList());
 	}
 }

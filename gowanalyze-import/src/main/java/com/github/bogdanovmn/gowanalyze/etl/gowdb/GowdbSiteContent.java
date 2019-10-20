@@ -1,9 +1,5 @@
 package com.github.bogdanovmn.gowanalyze.etl.gowdb;
 
-import org.jsoup.nodes.Element;
-
-import java.util.List;
-
 class GowdbSiteContent extends CacheableSiteContent {
 
 	GowdbSiteContent(String prefix) {
@@ -16,7 +12,9 @@ class GowdbSiteContent extends CacheableSiteContent {
 		);
 	}
 
-	List<Element> troops() {
-		return null;
+	KingdomsTableContent kingdomsTablePage() {
+		return new KingdomsTableContent(
+			get("/kingdomtable")
+		);
 	}
 }
